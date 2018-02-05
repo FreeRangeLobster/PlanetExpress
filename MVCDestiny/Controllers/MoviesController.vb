@@ -75,7 +75,7 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost()>
         <ValidateAntiForgeryToken()>
-        Function Create(<Bind(Include:="ID,Title,ReleaseDate,Genre,Price")> ByVal movie As Movie) As ActionResult
+        Function Create(<Bind(Include:="ID,Title,ReleaseDate,Genre,Price,Rating")> ByVal movie As Movie) As ActionResult
             If ModelState.IsValid Then
                 db.Movies.Add(movie)
                 db.SaveChanges()
@@ -101,7 +101,7 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost()>
         <ValidateAntiForgeryToken()>
-        Function Edit(<Bind(Include:="ID,Title,ReleaseDate,Genre,Price")> ByVal movie As Movie) As ActionResult
+        Function Edit(<Bind(Include:="ID,Title,ReleaseDate,Genre,Price,Rating")> ByVal movie As Movie) As ActionResult
             If ModelState.IsValid Then
                 db.Entry(movie).State = EntityState.Modified
                 db.SaveChanges()

@@ -216,10 +216,11 @@ C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\bin\Microsoft.AI.DependencyC
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\bin\Microsoft.AI.Web.xml
-C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.vbprojResolveAssemblyReference.cache
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.Resources.resources
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.vbproj.GenerateResource.Cache
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.vbproj.CoreCompileInputs.cache
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.dll
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.xml
 C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.pdb
+C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.Migrations.Initial.resources
+C:\Users\Juan\source\repos\PlanetExpress\MVCDestiny\obj\Debug\MVCDestiny.Migrations.Rating.resources

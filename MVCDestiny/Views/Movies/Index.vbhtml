@@ -36,30 +36,36 @@ End Code
             <th>
                 @Html.DisplayNameFor(Function(model) model.Price)
             </th>
+            <th>
+                @Html.DisplayNameFor(Function(model) model.Rating)
+            </th>
             <th></th>
         </tr>
 
         @For Each item In Model
             @<tr>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.ReleaseDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.Genre)
-                </td>
-                <td>
-                    @Html.DisplayFor(Function(modelItem) item.Price)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", New With {.id = item.ID}) |
-                    @Html.ActionLink("Details", "Details", New With {.id = item.ID}) |
-                    @Html.ActionLink("Delete", "Delete", New With {.id = item.ID})
-                </td>
+    <td>
+        @Html.DisplayFor(Function(modelItem) item.Title)
+    </td>
+    <td>
+        @Html.DisplayFor(Function(modelItem) item.ReleaseDate)
+    </td>
+    <td>
+        @Html.DisplayFor(Function(modelItem) item.Genre)
+    </td>
+    <td>
+        @Html.DisplayFor(Function(modelItem) item.Price)
+    </td>
+    <th>
+        @Html.DisplayFor(Function(model) item.Rating)
+    </th>
+    <td>
+        @Html.ActionLink("Edit", "Edit", New With {.id = item.ID}) |
+        @Html.ActionLink("Details", "Details", New With {.id = item.ID}) |
+        @Html.ActionLink("Delete", "Delete", New With {.id = item.ID})
+    </td>
 
-            </tr>
+</tr>
         Next
 
     </table>

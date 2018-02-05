@@ -6,8 +6,9 @@ Namespace Models
             Public Property Title As String
             Public Property ReleaseDate As DateTime
             Public Property Genre As String
-            Public Property Price As Decimal
-        End Class
+        Public Property Price As Decimal
+        Public Property Rating As String
+    End Class
 
         Public Class MovieDbContext
             Inherits DbContext
