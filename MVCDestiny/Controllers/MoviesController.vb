@@ -14,18 +14,43 @@ Namespace Controllers
 
         Private db As New MovieDbContext
 
-        ' GET: Movies
-        Function Index(ByVal searchString As String) As ActionResult
-            'Commented out to add a search in the page
-            'Return View(db.Movies.ToList())
-            'until here
+        '' GET: Movies
+        'Function Index(ByVal searchString As String) As ActionResult
+        '    'Commented out to add a search in the page
+        '    'Return View(db.Movies.ToList())
+        '    'until here
 
-            Dim movies = From m In db.Movies Select m
+        '    Dim movies = From m In db.Movies Select m
+        '    If Not String.IsNullOrEmpty(searchString) Then
+        '        movies = movies.Where(Function(movie) movie.Title.Contains(searchString))
+        '    End If
+        '    Return View(movies)
+
+        'End Function
+
+
+        Function Index(ByVal movieGenre As String, ByVal searchString As String)
+            Dim genreList As New List(Of String)
+            Dim genreQuery = From m In db.Movies
+                             Order By m.Genre
+                             Select m.Genre
+
+            genreList.AddRange(genreQuery.Distinct)
+
+            ViewBag.movieGenre = New SelectList(genreList)
+            Dim movies = From m In db.Movies
+                         Select m
+
+
             If Not String.IsNullOrEmpty(searchString) Then
-                movies = movies.Where(Function(movie) movie.Title.Contains(searchString))
+                movies = movies.Where(Function(m) m.Title.Contains(searchString))
             End If
-            Return View(movies)
 
+            If Not String.IsNullOrEmpty(movieGenre) Then
+                movies = movies.Where(Function(m) m.Genre.Equals(movieGenre))
+            End If
+
+            Return View(movies)
         End Function
 
         ' GET: Movies/Details/5
