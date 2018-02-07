@@ -234,6 +234,18 @@
       <DependentUpon>201802052116037_Rating.vb</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201802052116037_Rating.vb" />
+    <Compile Include="Migrations\201802071357298_DataAnnotations.Designer.vb">
+      <DependentUpon>201802071357298_DataAnnotations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802071357298_DataAnnotations.vb" />
+    <Compile Include="Migrations\201802071359058_DataAnnotations1.Designer.vb">
+      <DependentUpon>201802071359058_DataAnnotations1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802071359058_DataAnnotations1.vb" />
+    <Compile Include="Migrations\201802071400571_DataAnnotations2.Designer.vb">
+      <DependentUpon>201802071400571_DataAnnotations2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802071400571_DataAnnotations2.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="Models\AccountViewModels.vb" />
     <Compile Include="Models\IdentityModels.vb" />
@@ -263,6 +275,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802052116037_Rating.resx">
       <DependentUpon>201802052116037_Rating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802071357298_DataAnnotations.resx">
+      <DependentUpon>201802071357298_DataAnnotations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802071359058_DataAnnotations1.resx">
+      <DependentUpon>201802071359058_DataAnnotations1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802071400571_DataAnnotations2.resx">
+      <DependentUpon>201802071400571_DataAnnotations2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -307,8 +328,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.globalize.js" />
-    <Content Include="Scripts\jquery.validate.globalize.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.vbhtml" />
